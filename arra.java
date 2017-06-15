@@ -6,8 +6,8 @@ class arra
   Scanner sc=newScanner(System.in);
   int n=sc.nextInt();
   int[] a=new int[n];
-  int x=0;y=0;z=0;
-  for(int i=0i<n;i++)
+  int x=0,y=0,z=0;
+  for(int i=0;i<n;i++)
   {
    a[i]=sc.nextInt();
   }
@@ -22,7 +22,7 @@ class arra
       x=a[i];
       y=a[j];
       z=a[k];
-      System.out.println("sum of "+y+" "+z+"is"+x);
+      System.out.println("sum of "+x+" "+y+"is"+z);
      }
     }
    }
