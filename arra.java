@@ -27,6 +27,6 @@ class arra
     }
    }
   }
-   System.out.println("sum of "+x+" "+y+"is"+z);
+   System.out.println("sum of "+x+" "+z+"is"+y);
  }
 }      
