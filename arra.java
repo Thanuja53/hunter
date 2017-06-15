@@ -22,10 +22,11 @@ class arra
       x=a[i];
       y=a[j];
       z=a[k];
-      System.out.println("sum of "+x+" "+y+"is"+z);
+     
      }
     }
    }
-  } 
+  }
+   System.out.println("sum of "+x+" "+y+"is"+z);
  }
 }      
