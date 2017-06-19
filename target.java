@@ -1,27 +1,23 @@
 import java.util.*;
-
-public class target
+class target 
 {
-	public static void main(String[] args) 
-	{
-		Scanner s=new Scanner(System.in);
-		int a[]=new int[s.nextInt()];
-		int t=sc.nextInt();
-		for(int i=0;i<a.length;i++)
-			a[i]=sc.nextInt();
-		System.out.println(chcktrgt(a,t));
+  public static void main(String s[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.print("enter the target number");
+    int no=sc.nextInt();
+    for(int i=0;i<s.length;i++)
+    {
+      for(int j=0;j<s.length;j++)
+      {
+        if(i!=j)
+        {
+          if(Integer.valueOf(s[i])+Integer.valueOf(s[j])==no)
+          {
+            System.out.println(s[i]+" and "+s[j]);
+          }
+        }
+      }
+    }
   }
-	private static String chcktrgt(int[] a, int t)
-	{
-		String str=null;
-		for(int i=0;i<a.length;i++)
-		{
-			for(int j=i+1;j<a.length;j++)
-			{
-				if(a[i]+a[j]==t)
-					str=a[i]+","+a[j]+"  ";
-			}
-		}
-		return str;
-	}
 }
